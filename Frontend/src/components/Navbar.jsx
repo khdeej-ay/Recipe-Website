@@ -13,12 +13,12 @@ const Navbar = () => {
       {/* Navbar */}
       <nav className="flex w-full py-3 lg:py-4 px-5 md:px-20 items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center justify-center text-white text-lg cursor-pointer">
+        <a href="/" className="flex items-center justify-center text-white text-2xl lg:text-3xl font-semibold cursor-pointer">
           Munch
         </a>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex items-center justify-center text-white gap-8 flex-1">
+        <ul className="hidden md:flex md:text-sm items-center justify-center text-white gap-8 flex-1">
           <li>
             <a href="/" className="hover:text-gray-400 transition">Home</a>
           </li>
@@ -33,7 +33,7 @@ const Navbar = () => {
         {/* Sign-in Button for Desktop */}
         <Button
           title="Login"
-          containerStyle="hidden md:block bg-transparent border border-white text-white hover:bg-white hover:text-slate-700 rounded-full min-w-[90px]"
+          containerStyle="hidden md:block md:text-sm bg-transparent border border-white text-white hover:bg-white hover:text-slate-700 rounded-full min-w-[90px]"
           handleClick={() => navigate('/login')} // Navigate to the login page
         />
 
