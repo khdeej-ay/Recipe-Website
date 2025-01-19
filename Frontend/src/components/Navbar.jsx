@@ -18,7 +18,7 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex md:text-sm items-center justify-center text-white gap-8 flex-1">
+        <ul className="hidden md:flex text-sm md:text-md items-center justify-center text-white gap-8 flex-1">
           <li>
             <a href="/" className="hover:text-gray-400 transition">Home</a>
           </li>
@@ -33,7 +33,7 @@ const Navbar = () => {
         {/* Sign-in Button for Desktop */}
         <Button
           title="Login"
-          containerStyle="hidden md:block md:text-sm bg-transparent border border-white text-white hover:bg-white hover:text-slate-700 rounded-full min-w-[90px]"
+          containerStyle="hidden md:block md:text-md bg-transparent border border-white text-white hover:bg-white hover:text-slate-700 rounded-full min-w-[90px]"
           handleClick={() => navigate('/login')} // Navigate to the login page
         />
 
