@@ -6,10 +6,16 @@ import userRoutes from './routes/userRoutes.js';    //Handles user-specific API 
 dotenv.config();
 
 const app = express();    //Creates an Express app
-const port = 4000;
-// const port = process.env.PORT;
+// const port = 4000;
+const port = process.env.PORT;
 
-app.use(cors());    //Enables cross-origin access
+// app.use(cors({
+//     origin: 'https://recipe-website-munch.vercel.app/',    //Allow the live site to make requests
+//     // origin: 'http://localhost:5173/',    //Allow localhost to make requests (for debugging purposes)
+//     methods: ['GET', 'POST'],
+// }));    //Enables cross-origin access
+
+app.use(cors());  // Allow all origins (for debugging purposes)
 app.use(express.json());    //Parses JSON request bodies
 
 // app.get('/', (req, res) => {
