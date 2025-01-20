@@ -5,7 +5,7 @@ const RecipeCard = ({ recipe }) => {
     const { strMeal, strMealThumb, strArea, strCategory, idMeal } = recipe;
 
     return (
-        <Link to={`/recipes/${idMeal}`} className="w-[150px]">
+        <Link to={`/recipes/${idMeal}`} className="w-[150px] flex-grow">
             <div className="bg-gradient-to-b from-neutral-700 to-black shadow-lg w-full rounded-lg">
                 <img
                     src={strMealThumb}
