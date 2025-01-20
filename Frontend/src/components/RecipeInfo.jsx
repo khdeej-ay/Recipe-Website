@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
 const RecipePage = () => {
   const { idMeal } = useParams();  // Get the recipe id from URL params
