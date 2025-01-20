@@ -18,8 +18,8 @@ const Header = ({ title, image, type }) => {
         <h1 className='text-[#EEEEEE] text-4xl md:text-5xl font-bold text-center'>{title}</h1>
         {
           type && (
-            <p className='text-md mt-4 text-center text-[#FEE9D7] px-6 py-4 rounded-box '>Discover Delectable Recipes, One at a Time!
-              <br className='hidden md:block' />Explore, save, and savor meals from around the world. Mouthwatering dishes for any occasion—right at your fingertips!</p>
+            <p className='text-md mt-4 text-center text-[#FEE9D7] px-6 py-4 rounded-box '>Discover Delectable Recipes, One at a Time! 
+              <br className='hidden md:block' /> Explore, save, and savor meals from around the world. Mouthwatering dishes for any occasion—right at your fingertips!</p>
           )
         }
       </div>
