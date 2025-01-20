@@ -23,7 +23,7 @@ const Navbar = () => {
             <a href="/" className="hover:text-gray-400 transition">Home</a>
           </li>
           <li>
-            <a href="/#recipes" className="hover:text-gray-400 transition">Explore</a>
+            <a href="/explore" className="hover:text-gray-400 transition">Explore</a>
           </li>
           <li>
             <a href="/" className="hover:text-gray-400 transition">Favorites</a>
