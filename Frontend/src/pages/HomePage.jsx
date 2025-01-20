@@ -1,7 +1,9 @@
 import React from 'react'
-import Header from '../components/Header'
-// import RecipeDetail from '../components/RecipeDetail'
 import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+import Categories from '../components/Categories'
+import { fetchCategories, fetchRandomRecipe } from '../api'
+import Generator from '../components/Generator'
 import Footer from '../components/Footer'
 
 const HomePage = () => {
@@ -19,10 +21,15 @@ const HomePage = () => {
       type = 'home'
       />
 
-      {/* Recipes section */}
-      {/* <section id="recipes" className='w-full mx-auto'>
-        <RecipeDetail />
-      </section> */}
+      {/* Category section */}
+      <section id="category" className='w-full mx-auto'>
+        <Categories fetchCategories={fetchCategories} />
+      </section>
+
+      {/* Random Recipe Generator */}
+      <section id="random" className='w-full mx-auto'>
+        <Generator fetchRandomRecipe={fetchRandomRecipe} />
+      </section>
 
       {/* Footer */}
       <Footer />
