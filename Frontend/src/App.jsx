@@ -6,8 +6,7 @@ import RecipePage from './pages/RecipePage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import ExplorePage from './pages/ExplorePage';
-import Categories from './components/Categories';
-import CategoryDisplay from './components/CategoryDisplay';
+import CategoryPage from './pages/CategoryPage';
 
 // function Layout(){
 //   return (
@@ -29,7 +28,7 @@ function App() {
         <Route path="/" element= { <Outlet /> }>
           <Route index element = { <HomePage /> }></Route>
           <Route path="explore" element = { <ExplorePage /> }></Route>
-          <Route path="category/:strCategory" element = { <CategoryDisplay /> }></Route>
+          <Route path="category/:strCategory" element = { <CategoryPage /> }></Route>
           <Route path="recipes/:idMeal" element = { <RecipePage /> }></Route>
           <Route path="login" element = { <LoginPage />}></Route>
           <Route path="register" element = { <RegisterPage />}></Route>
