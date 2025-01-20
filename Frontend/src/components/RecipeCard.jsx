@@ -1,31 +1,33 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const RecipeCard = ({ recipe }) => {
-    const { image, label, cuisineType, dietLabel, mealType, uri } = recipe?.recipe
-
-    const id = uri?.split("#")[1]
+    const { strMeal, strMealThumb, strArea, strCategory, idMeal } = recipe;
 
     return (
-        <Link to={`/recipes/${id}`} className='w-full md:w-[220px]'>
-            <div className='bg-_gradient shadow w-full rounded-lg'>
-                <img src={image} alt={label} className='rounded-lg h-[200px] md:h-[150px] w-full object-cover' />
+        <Link to={`/recipes/${idMeal}`} className="w-[150px]">
+            <div className="bg-gradient-to-b from-neutral-700 to-black shadow-lg w-full rounded-lg">
+                <img
+                    src={strMealThumb}
+                    alt={strMeal}
+                    className="rounded-lg h-[100px] md:h-[150px] w-full object-cover"
+                />
 
-                <div className='p-3'>
-                    <p className='text-white font-semibold'>{label}</p>
+                <div className="p-3 pt-2">
+                    <p className="text-zinc-50 font-semibold">{strMeal}</p>
 
-                    <div className='mt-2'>
-                        <span className='px-2 py-1 text-[12px] capitalize bg-[#0c452243] shadow-xl rounded-full mr-3 text-stone-200'>
-                            {cuisineType}
+                    <div className="mt-2 flex flex-wrap gap-1">
+                        <span className="px-2 py-1 text-xs capitalize bg-neutral-500 shadow-xl rounded-lg text-stone-200">
+                            {strArea || "Unknown Area"}
                         </span>
-                        <span className='px-2 py-1 text-[12px] capitalize bg-[#0c452243] shadow-xl rounded-full text-stone-200'>
-                            {mealType}
+                        <span className="px-2 py-1 text-xs capitalize bg-neutral-500 shadow-xl rounded-lg text-stone-200">
+                            {strCategory || "Unknown Category"}
                         </span>
                     </div>
                 </div>
             </div>
         </Link>
-    )
-}
+    );
+};
 
-export default RecipeCard
+export default RecipeCard;
