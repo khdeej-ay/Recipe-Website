@@ -11,8 +11,6 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-
-
 .custom-btn {
   @apply flex-row relative justify-center items-center py-2 px-6 outline-none;
 }
@@ -30,7 +28,7 @@ body {
 }
 
 .bg_gradient {
-  @apply bg-gradient-to-t from-slate-900 to-transparent top-0
+  @apply bg-gradient-to-t from-neutral-900 to-transparent top-0
 }
 
 .dots-container {
