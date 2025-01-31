@@ -53,7 +53,7 @@ const Navbar = () => {
         } bg-black flex-col w-full h-screen items-center justify-center px-4 pb-14 gap-6 text-white text-[14px]`}
       >
         <a href="/" className="hover:text-gray-400 transition">Home</a>
-        <a href="/#recipes" className="hover:text-gray-400 transition">Recipes</a>
+        <a href="/explore" className="hover:text-gray-400 transition">Explore</a>
         <a href="/" className="hover:text-gray-400 transition">Favorites</a>
         <Button
           title="Sign in"
