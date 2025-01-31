@@ -78,4 +78,4 @@ const RecipeSearch = () => {
     )
 }
 
-export default RecipeSearch
+export default RecipeSearch 
